@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: tms-ai
+    env: python
+    region: oregon
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: bash start.sh
+    envVars:
+      - key: MISTRAL_API_KEY
+        sync: false
+      - key: GROQ_API_KEY
+        sync: false
+      - key: PYTHON_VERSION
+        value: 3.10.0
+    disk:
+      name: tms-data
+      mountPath: /opt/render/project/src/chroma_db
+      sizeGB: 1

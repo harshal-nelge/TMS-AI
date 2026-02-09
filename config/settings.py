@@ -46,6 +46,10 @@ class Settings:
     MAX_FILE_SIZE: int = 10 * 1024 * 1024  # 10 MB
     ALLOWED_EXTENSIONS: set = {"pdf", "docx", "txt"}
     
+    # Server Configuration
+    PORT: int = int(os.getenv("PORT", "8000"))
+    HOST: str = os.getenv("HOST", "0.0.0.0")
+    
     def validate(self):
         """Validate that required API keys are present"""
         if not self.MISTRAL_API_KEY:

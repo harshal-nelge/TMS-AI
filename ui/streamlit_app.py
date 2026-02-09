@@ -4,6 +4,7 @@ TMS AI - Streamlit User Interface
 import streamlit as st
 import requests
 import json
+import os
 from typing import Optional
 
 # Configure Streamlit page
@@ -13,8 +14,8 @@ st.set_page_config(
     layout="wide"
 )
 
-# API configuration
-API_BASE_URL = "http://localhost:8000"
+# API configuration - use environment variable or default to localhost
+API_BASE_URL = os.getenv("API_BASE_URL", "http://localhost:8000")
 
 # Custom CSS
 st.markdown("""
