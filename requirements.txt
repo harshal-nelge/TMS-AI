@@ -8,6 +8,8 @@ streamlit
 
 # LangChain ecosystem
 langchain
+langchain-text-splitters
+langchain-core
 langchain-community
 langchain-mistralai
 langchain-groq
