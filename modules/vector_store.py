@@ -3,7 +3,7 @@ Vector store manager using ChromaDB with Mistral embeddings
 """
 import logging
 from typing import List, Optional
-from langchain.schema import Document
+from langchain_core.documents import Document
 from langchain_community.vectorstores import Chroma
 from langchain_mistralai import MistralAIEmbeddings
 
