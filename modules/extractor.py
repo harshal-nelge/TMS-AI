@@ -5,7 +5,7 @@ import logging
 import json
 from typing import Dict, Any
 from langchain_groq import ChatGroq
-from langchain.prompts import PromptTemplate
+from langchain_core.prompts import PromptTemplate
 from langchain_community.vectorstores import Chroma
 
 from config.settings import settings
