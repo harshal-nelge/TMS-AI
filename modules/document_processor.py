@@ -9,7 +9,7 @@ from pathlib import Path
 # Document loaders
 from langchain_community.document_loaders import PyPDFLoader, Docx2txtLoader, TextLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-from langchain.schema import Document
+from langchain_core.documents import Document
 
 from config.settings import settings
 
