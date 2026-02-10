@@ -4,7 +4,7 @@ RAG engine for question answering with guardrails and confidence scoring
 import logging
 from typing import List, Dict, Any, Tuple
 from langchain_groq import ChatGroq
-from langchain.schema import Document
+from langchain_core.documents import Document
 from langchain_community.vectorstores import Chroma
 from langchain.prompts import PromptTemplate
 
