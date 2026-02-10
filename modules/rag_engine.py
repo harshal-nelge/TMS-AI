@@ -6,7 +6,7 @@ from typing import List, Dict, Any, Tuple
 from langchain_groq import ChatGroq
 from langchain_core.documents import Document
 from langchain_community.vectorstores import Chroma
-from langchain.prompts import PromptTemplate
+from langchain_core.prompts import PromptTemplate
 
 from config.settings import settings
 from utils.retry_utils import retry_on_api_error
