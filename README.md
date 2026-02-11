@@ -147,14 +147,8 @@ GROQ_API_KEY=your_key_here
 uvicorn app:app --reload --port 8000
 ```
 
-6. **Run the Streamlit UI** (in a new terminal)
-```bash
-streamlit run ui/streamlit_app.py --server.port 8501
-```
-
 7. **Access the application**
 - API Documentation: http://localhost:8000/docs
-- Streamlit UI: http://localhost:8501
 
 ## 📖 Usage Guide
 
@@ -212,11 +206,11 @@ Full API documentation available at http://localhost:8000/docs when server is ru
 
 ## 🛠️ Tech Stack
 
-- **Backend**: FastAPI 0.109.0
-- **UI**: Streamlit 1.31.0
+- **Backend**: FastAPI
+- **UI**: Streamlit
 - **LLM**: ChatGroq (llama-3.1-8b-instant)
 - **Embeddings**: Mistral Embed
-- **Vector DB**: ChromaDB 0.4.22
+- **Vector DB**: ChromaDB
 - **Document Processing**: LangChain, PyPDF, python-docx
-- **Retry Logic**: Tenacity 8.2.3
+- **Retry Logic**: Tenacity
 
