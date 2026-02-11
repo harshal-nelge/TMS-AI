@@ -15,7 +15,8 @@ st.set_page_config(
 )
 
 # API configuration - use environment variable or default to localhost
-API_BASE_URL = os.getenv("API_BASE_URL", "http://localhost:8001")
+# When deployed, this will route through the proxy at /api
+API_BASE_URL = os.getenv("API_BASE_URL", "http://localhost:8000/api")
 
 # Custom CSS
 st.markdown("""
@@ -119,7 +120,7 @@ with tab1:
                         
                 except Exception as e:
                     st.error(f"❌ Error connecting to API: {str(e)}")
-                    st.info("Make sure the FastAPI server is running on http://localhost:8001")
+                    st.info("Make sure the services are running (check start.sh)")
 
 # Tab 2: Ask Questions
 with tab2:

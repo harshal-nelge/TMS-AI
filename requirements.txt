@@ -34,3 +34,4 @@ tenacity
 
 # Additional utilities
 requests
+httpx
