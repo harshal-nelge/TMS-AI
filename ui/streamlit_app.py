@@ -15,7 +15,7 @@ st.set_page_config(
 )
 
 # API configuration - use environment variable or default to localhost
-API_BASE_URL = os.getenv("API_BASE_URL", "http://localhost:8000")
+API_BASE_URL = os.getenv("API_BASE_URL", "http://localhost:8001")
 
 # Custom CSS
 st.markdown("""
@@ -119,7 +119,7 @@ with tab1:
                         
                 except Exception as e:
                     st.error(f"❌ Error connecting to API: {str(e)}")
-                    st.info("Make sure the FastAPI server is running on http://localhost:8000")
+                    st.info("Make sure the FastAPI server is running on http://localhost:8001")
 
 # Tab 2: Ask Questions
 with tab2:
