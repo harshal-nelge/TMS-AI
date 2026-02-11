@@ -194,7 +194,12 @@ curl -X POST "http://localhost:8000/extract?document_id=your-document-id"
 
 Full API documentation available at http://localhost:8000/docs when server is running.
 
+## ⚠️ Known Failure Cases
 
+2. **Complex Tables**: Table structure may be lost during chunking
+3. **Multi-Document References**: Cannot answer questions spanning multiple uploaded documents (can be implemented if required)
+4. **Ambiguous Questions**: Vague questions may trigger guardrails even with relevant content
+5. **Large Documents**: Very large files (>10MB) are rejected due to size limits (due to Free tier service)
 
 ## 🛠️ Tech Stack
 
