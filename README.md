@@ -209,18 +209,6 @@ Full API documentation available at http://localhost:8000/docs when server is ru
 5. **Large Documents**: Very large files (>10MB) are rejected due to size limits
 6. **Missing Fields**: Extraction returns null for fields not present in document
 
-## 💡 Future Improvements
-
-1. **OCR Integration**: Add Tesseract/Azure Form Recognizer for scanned documents
-2. **Table Extraction**: Specialized chunking for tabular data
-3. **Multi-Document RAG**: Query across multiple uploaded documents
-4. **Streaming Responses**: Real-time answer generation for better UX
-5. **Fine-tuned Embeddings**: Domain-specific embedding model for logistics
-6. **Citation Precision**: Line-level source highlighting in UI
-7. **Batch Processing**: Upload and process multiple documents simultaneously
-8. **Persistent Storage**: Database backend instead of in-memory registry
-9. **User Authentication**: Multi-user support with document isolation
-10. **Advanced Analytics**: Track question patterns and confidence trends
 
 ## 🛠️ Tech Stack
 
@@ -232,42 +220,3 @@ Full API documentation available at http://localhost:8000/docs when server is ru
 - **Document Processing**: LangChain, PyPDF, python-docx
 - **Retry Logic**: Tenacity 8.2.3
 
-## 📁 Project Structure
-
-```
-TMS AI/
-├── app.py                      # FastAPI application
-├── requirements.txt            # Python dependencies
-├── .env                        # Environment variables
-├── .gitignore                 # Git ignore patterns
-├── config/
-│   └── settings.py            # Configuration management
-├── models/
-│   └── schemas.py             # Pydantic data models
-├── modules/
-│   ├── document_processor.py # Document parsing and chunking
-│   ├── vector_store.py        # ChromaDB vector management
-│   ├── rag_engine.py          # RAG Q&A with guardrails
-│   └── extractor.py           # Structured data extraction
-├── utils/
-│   ├── helpers.py             # Utility functions
-│   └── retry_utils.py         # Retry mechanisms
-├── ui/
-│   └── streamlit_app.py       # Streamlit user interface
-├── uploads/                   # Uploaded documents (gitignored)
-├── chroma_db/                 # Vector database (gitignored)
-└── docs/
-    └── ARCHITECTURE.md        # Detailed architecture docs
-```
-
-## 📝 License
-
-This is a POC project created for demonstration purposes.
-
-## 👤 Author
-
-Built with ❤️ for TMS AI Assignment
-
----
-
-**Questions or Issues?** Check the API docs at `/docs` or review the logs for debugging.
