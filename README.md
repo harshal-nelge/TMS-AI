@@ -203,6 +203,6 @@ Full API documentation available at http://localhost:8000/docs when server is ru
 - **LLM**: ChatGroq (llama-3.1-8b-instant)
 - **Embeddings**: Mistral Embed
 - **Vector DB**: ChromaDB
-- **Document Processing**: LangChain, PyPDF, python-docx
+- **Document Processing**: LangChain, PyPDF (OCR Based), python-docx
 - **Retry Logic**: Tenacity
 
